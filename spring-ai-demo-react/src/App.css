@@ -1,0 +1,63 @@
+.App {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Buttons */
+.App button {
+  padding: 12px 24px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.App button:hover {
+  background: #4f46e5;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Content area */
+.App > div:last-child {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 50px 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.App h2 {
+  margin: 0;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .App {
+    padding: 25px 15px;
+  }
+
+  .App button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .App > div:last-child {
+    margin-top: 25px;
+    padding: 40px 20px;
+  }
+}
